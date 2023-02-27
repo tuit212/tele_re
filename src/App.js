@@ -3,6 +3,11 @@ import "./App.scss"
 
 import Left from "./components/Left/Left";
 import Center from "./components/Center/Center";
+import Person from "./Pages/Person/Person";
+import NatojTalim from "./Pages/NajotTalim/NatojTalim";
+import Kanalim from "./Pages/Kanalim/Kanalim";
+import Bozor from "./Pages/Bozor/Bozor";
+import UnRead from "./Pages/UnRead/UnRead";
 
 
 function App() {
@@ -15,6 +20,12 @@ function App() {
        {/* center */}
        <Routes>
           <Route path="/" element={<Center/>}/>
+          <Route path="/shaxsiy" element={<Person/>} />
+          <Route path="/najotTa'lim" element={<NatojTalim/>} />
+          <Route path="/kanalim" element={<Kanalim/>} />
+          <Route path="/bozor" element={<Bozor/>} />
+          <Route path="/o'qilmaganlar" element={<UnRead/>} />
+          <Route path="/settings" element={<Kanalim/>} />
        </Routes>
 
 

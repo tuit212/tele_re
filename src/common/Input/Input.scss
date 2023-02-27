@@ -1,0 +1,31 @@
+.input{
+    padding: 15px 20px;
+    position: fixed;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
+    max-width: 350px;
+    width: 100%;
+    z-index: 111;
+
+    & > input {
+        border: none;
+        outline: none;
+        background-color: #3D444B;
+        border-radius: 8px;
+        width: 100%;
+        padding: 10px;
+
+        &::placeholder{
+            color: #969597;
+            font-size: 14px;
+        }
+
+        &:valid{
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        &:focus > &::placeholder{
+            color: #fff;
+        }
+    }
+}
