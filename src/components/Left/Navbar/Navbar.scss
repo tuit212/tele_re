@@ -1,0 +1,29 @@
+.site-navbar{
+    margin-top: 70px;
+    text-align: center;
+
+    .nav{
+        color: #8D939E;
+        display: block;
+        padding: 6px 0;
+        transition: all 0.3s ease-in-out;
+        width: 100%;
+        
+        & > p {
+            font-size: 13px;
+            margin-top: 2px;
+            padding: 0 10px;
+        }
+
+        & > i {
+            text-align: center;
+            font-size: 19px;
+        }
+    }
+
+    .active{
+        background-color: #282E33;
+        color: #449BF1;
+        transform: scale(0.98);
+    }
+}

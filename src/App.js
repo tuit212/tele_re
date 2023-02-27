@@ -1,6 +1,8 @@
-// import { Routes , Route } from "react-router-dom";
+import { Routes , Route } from "react-router-dom";
+import "./App.scss"
 
 import Left from "./components/Left/Left";
+import Center from "./components/Center/Center";
 
 
 function App() {
@@ -11,6 +13,9 @@ function App() {
        <Left/>
 
        {/* center */}
+       <Routes>
+          <Route path="/" element={<Center/>}/>
+       </Routes>
 
 
        {/* right */}
