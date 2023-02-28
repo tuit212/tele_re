@@ -19,6 +19,7 @@ function User(title , icon , img , texts , time  ) {
             setData({
                 isFetched:true, 
                 data:res.data
+                
             });
         })
         .catch(err => {
