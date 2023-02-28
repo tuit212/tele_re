@@ -1,6 +1,8 @@
 import { Routes , Route } from "react-router-dom";
 import "./App.scss"
-
+// import { useState , useEffect } from "react";
+// import axios from 'axios'
+// import api from "./api/posts"
 import Left from "./components/Left/Left";
 import Center from "./components/Center/Center";
 import Person from "./Pages/Person/Person";
@@ -13,6 +15,26 @@ import UserPage from "./UserPage/UserPage";
 
 
 function App() {
+
+   // const [posts , setPosts] = useState([])
+
+   // let [users , setUsers] = useState(null)
+    
+   // useEffect(() => {
+   //   const fetchPosts = async () => {
+   //    try {
+   //       const res = await api.get('/posts');
+   //       setPosts(res.data)
+   //       console.log(res.data);
+   //    } catch (err) {
+   //       console.log(err.res.data);
+   //    }
+   //   }
+   //   fetchPosts();
+   // } , [])
+
+
+   
   return (
     <div className="App">
     
