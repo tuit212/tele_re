@@ -8,6 +8,8 @@ import NatojTalim from "./Pages/NajotTalim/NatojTalim";
 import Kanalim from "./Pages/Kanalim/Kanalim";
 import Bozor from "./Pages/Bozor/Bozor";
 import UnRead from "./Pages/UnRead/UnRead";
+import Right from "./components/Right/Right";
+import UserPage from "./UserPage/UserPage";
 
 
 function App() {
@@ -19,7 +21,9 @@ function App() {
 
        {/* center */}
        <Routes>
-          <Route path="/" element={<Center/>}/>
+          <Route path="/" element={<Center/>}>
+              <Route path="person/only_212" element={<UserPage/>} />
+          </Route>
           <Route path="/shaxsiy" element={<Person/>} />
           <Route path="/najotTa'lim" element={<NatojTalim/>} />
           <Route path="/kanalim" element={<Kanalim/>} />
@@ -30,6 +34,10 @@ function App() {
 
 
        {/* right */}
+       <Routes>
+          <Route path="/" element={<Right/>} />
+          <Route path="person/only_212" element={<UserPage/>} />
+       </Routes>
     </div>
   );
 }
