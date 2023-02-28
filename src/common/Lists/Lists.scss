@@ -1,6 +1,7 @@
 .user_list{
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+    gap: 20px;
     padding: 10px 25px;
     cursor: pointer;
 
@@ -22,11 +23,13 @@
         align-items: center;
         justify-content: space-between;
         color: #fff;
+        width: 210px;
 
         & > div {
             display: flex;
             align-items: center;
             gap: 10px;
+            
 
             & > i {
                 font-size: 11px;
